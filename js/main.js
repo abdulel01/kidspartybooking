@@ -1,15 +1,15 @@
 // Mobile Menu Toggle
-const navToggle = document.querySelector('.nav-toggle');
+const mobileMenu = document.querySelector('.mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
-if (navToggle && navLinks) {
-    navToggle.addEventListener('click', () => {
+if (mobileMenu && navLinks) {
+    mobileMenu.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
-        if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+        if (!mobileMenu.contains(e.target) && !navLinks.contains(e.target)) {
             navLinks.classList.remove('active');
         }
     });
@@ -37,10 +37,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Preview Button Functionality
-document.querySelectorAll('.preview-btn').forEach(button => {
-    button.addEventListener('click', () => {
-        alert('Preview feature coming soon!');
-    });
+document.querySelectorAll('.btn-primary').forEach(button => {
+    if (button.textContent.includes('Preview')) {
+        button.addEventListener('click', () => {
+            alert('Preview feature coming soon!');
+        });
+    }
 });
 
 // Form Submission
@@ -52,6 +54,29 @@ if (contactForm) {
         contactForm.reset();
     });
 }
+
+// Add active class to current section in navigation
+const sections = document.querySelectorAll('section');
+const navItems = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - 60) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href').slice(1) === current) {
+            item.classList.add('active');
+        }
+    });
+});
 
 // Intersection Observer for Fade-in Animations
 const observerOptions = {

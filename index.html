@@ -5,219 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Party Booking</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-brand">
-            <a href="#home">🎈 Kids Party Booking</a>
-        </div>
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#features">Features</a>
-            <a href="#experience">Experience</a>
-            <a href="#packages">Packages</a>
-            <a href="#invitations">Invitations</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <div class="nav-toggle">
-            <i class="fas fa-bars"></i>
+        <div class="nav-content">
+            <a href="#" class="nav-brand">Kids Party Booking</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#experience">Experience</a>
+                <a href="#packages">Packages</a>
+                <a href="#invitations">Invitations</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1 class="hero-title">🎉 Create Unforgettable Memories! 🎈</h1>
+            <h1 class="hero-title">Create Unforgettable Memories!</h1>
             <p class="hero-subtitle">Transform your child's special day into an epic adventure with our magical party experiences!</p>
-            <div class="hero-buttons">
-                <a href="#booking" class="cta-button primary">
-                    <i class="fas fa-calendar-check"></i> Book Your Party
-                </a>
-                <a href="#packages" class="cta-button secondary">
-                    <i class="fas fa-gift"></i> Explore Packages
-                </a>
-            </div>
-            <div class="hero-features">
-                <div class="feature-item">
-                    <i class="fas fa-magic"></i>
-                    <span>Magical Experience</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-cake-candles"></i>
-                    <span>Delicious Food</span>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-star"></i>
-                    <span>Fun Activities</span>
-                </div>
+            <div class="cta-buttons">
+                <a href="#booking" class="btn btn-primary">Book Your Party</a>
+                <a href="#packages" class="btn btn-secondary">Explore Packages</a>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features-section" id="features">
+    <section class="features" id="features">
         <div class="container">
             <h2 class="section-title">Why Choose Us?</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <i class="fas fa-magic"></i>
-                    <h3>Magical Experience</h3>
+                    <i class="fas fa-magic feature-icon"></i>
+                    <h3 class="feature-title">Magical Experience</h3>
                     <p>Create unforgettable memories with our themed parties and activities.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-cake-candles"></i>
-                    <h3>Delicious Food</h3>
+                    <i class="fas fa-birthday-cake feature-icon"></i>
+                    <h3 class="feature-title">Delicious Food</h3>
                     <p>Enjoy a variety of tasty treats and party favorites.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-star"></i>
-                    <h3>Fun Activities</h3>
+                    <i class="fas fa-star feature-icon"></i>
+                    <h3 class="feature-title">Fun Activities</h3>
                     <p>Engaging games and entertainment for all ages.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Party Day Experience -->
-    <section class="party-experience-section" id="experience">
+    <!-- Party Experience Section -->
+    <section class="party-experience" id="experience">
         <div class="container">
             <h2 class="section-title">Party Day Experience</h2>
-            <div class="timeline-container">
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Setup & Arrival</h3>
-                            <p>Our team arrives early to set up the perfect party environment.</p>
-                        </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Setup & Arrival</h3>
+                        <p>Our team arrives early to set up the perfect party environment.</p>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Welcome & Activities</h3>
-                            <p>Guests are greeted with fun activities and games.</p>
-                        </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Welcome & Activities</h3>
+                        <p>Guests are greeted with fun activities and games.</p>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-utensils"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Food & Refreshments</h3>
-                            <p>Delicious treats and drinks are served.</p>
-                        </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Food & Refreshments</h3>
+                        <p>Delicious treats and drinks are served.</p>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-icon">
-                            <i class="fas fa-music"></i>
-                        </div>
-                        <div class="timeline-content">
-                            <h3>Entertainment</h3>
-                            <p>Special entertainment and party games.</p>
-                        </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Entertainment</h3>
+                        <p>Special entertainment and party games.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Packages Section -->
-    <section class="packages-section" id="packages">
-        <div class="container">
-            <h2 class="section-title">Our Party Packages</h2>
-            <div class="packages-grid">
-                <div class="package-card">
-                    <div class="package-header">
-                        <h3>Basic Package</h3>
-                        <div class="price">$299<span>/party</span></div>
-                    </div>
-                    <div class="package-content">
-                        <p>Perfect for small gatherings</p>
-                        <ul class="features-list">
-                            <li>2 hours of party time</li>
-                            <li>Basic decorations</li>
-                            <li>Party games</li>
-                            <li>Basic food & drinks</li>
-                        </ul>
-                        <a href="#booking" class="book-now-btn">Book Now</a>
-                    </div>
-                </div>
-                <div class="package-card">
-                    <div class="package-header">
-                        <h3>Premium Package</h3>
-                        <div class="price">$499<span>/party</span></div>
-                    </div>
-                    <div class="package-content">
-                        <p>Our most popular choice</p>
-                        <ul class="features-list">
-                            <li>3 hours of party time</li>
-                            <li>Premium decorations</li>
-                            <li>Entertainment included</li>
-                            <li>Full catering service</li>
-                        </ul>
-                        <a href="#booking" class="book-now-btn">Book Now</a>
-                    </div>
-                </div>
-                <div class="package-card">
-                    <div class="package-header">
-                        <h3>Luxury Package</h3>
-                        <div class="price">$799<span>/party</span></div>
-                    </div>
-                    <div class="package-content">
-                        <p>The ultimate celebration</p>
-                        <ul class="features-list">
-                            <li>4 hours of party time</li>
-                            <li>Custom theme design</li>
-                            <li>Professional entertainer</li>
-                            <li>Premium catering</li>
-                        </ul>
-                        <a href="#booking" class="book-now-btn">Book Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Digital Party Invitations -->
-    <section class="digital-invitations-section" id="invitations">
+    <!-- Digital Invitations Section -->
+    <section class="digital-invitations" id="invitations">
         <div class="container">
             <h2 class="section-title">Digital Party Invitations</h2>
-            <div class="invitation-showcase">
-                <div class="invitation-example">
-                    <div class="invitation-card">
-                        <div class="invitation-header">
-                            <h3>Birthday Bash</h3>
-                            <span class="theme">🎂</span>
-                        </div>
-                        <div class="invitation-preview">
-                            <img src="images/invitation1.jpg" alt="Birthday Invitation">
-                        </div>
-                        <div class="invitation-details">
-                            <p>Perfect for birthday celebrations!</p>
-                            <button class="preview-btn">Preview Design</button>
-                        </div>
+            <div class="invitations-grid">
+                <div class="invitation-card">
+                    <img src="images/invitation1.jpg" alt="Birthday Invitation" class="invitation-image">
+                    <div class="invitation-content">
+                        <h3>Birthday Bash</h3>
+                        <p>Perfect for birthday celebrations!</p>
+                        <button class="btn btn-primary">Preview Design</button>
                     </div>
                 </div>
-                <div class="invitation-example">
-                    <div class="invitation-card">
-                        <div class="invitation-header">
-                            <h3>Princess Party</h3>
-                            <span class="theme">👑</span>
-                        </div>
-                        <div class="invitation-preview">
-                            <img src="images/invitation2.jpg" alt="Princess Invitation">
-                        </div>
-                        <div class="invitation-details">
-                            <p>Magical princess-themed design!</p>
-                            <button class="preview-btn">Preview Design</button>
-                        </div>
+                <div class="invitation-card">
+                    <img src="images/invitation2.jpg" alt="Princess Invitation" class="invitation-image">
+                    <div class="invitation-content">
+                        <h3>Princess Party</h3>
+                        <p>Magical princess-themed design!</p>
+                        <button class="btn btn-primary">Preview Design</button>
                     </div>
                 </div>
             </div>
@@ -225,27 +121,38 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section" id="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title">Get in Touch</h2>
-            <div class="contact-container">
+            <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-                    <p><i class="fas fa-envelope"></i> info@kidspartybooking.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Party Street, Fun City</p>
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <span>(555) 123-4567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <span>info@kidspartybooking.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <span>123 Party Street, Fun City</span>
+                    </div>
                 </div>
                 <form class="contact-form">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" required></textarea>
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
         </div>
@@ -257,23 +164,27 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>About Us</h3>
-                    <p>Creating magical moments for your child's special day!</p>
+                    <ul class="footer-links">
+                        <li><a href="#features">Our Features</a></li>
+                        <li><a href="#experience">Party Experience</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#invitations">Invitations</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <a href="#home">Home</a>
-                    <a href="#features">Features</a>
-                    <a href="#experience">Experience</a>
-                    <a href="#packages">Packages</a>
-                    <a href="#invitations">Invitations</a>
-                    <a href="#contact">Contact</a>
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="tel:5551234567">(555) 123-4567</a></li>
+                        <li><a href="mailto:info@kidspartybooking.com">info@kidspartybooking.com</a></li>
+                        <li>123 Party Street, Fun City</li>
+                    </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Connect With Us</h3>
+                    <h3>Follow Us</h3>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
